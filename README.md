@@ -107,13 +107,15 @@ num_workers: 4
     generated_videos_folder: Directory containing the generated videos to evaluate.
     resize_shape: Frame resize dimensions.
     num_workers: Number of worker threads for frame extraction.
+---
 
-### Running the Evaluation
+## Running the Evaluation
 
-#### Prepare the Data
+### Prepare the Data
 Place your ground truth video in the data/original/ directory.
 Place the generated videos you want to evaluate in the data/generated/ directory.
-#### Run the Main Script
+
+### Run the Main Script
 ```bash
 Copy code
 python main.py
@@ -126,17 +128,18 @@ ffmpeg is not installed or not found in PATH. Please install ffmpeg to standardi
 Frame rate standardization will be skipped if FFmpeg is unavailable.
 ```
 
-#### Check the Logs
+### Check the Logs
 Detailed logs with frame-wise metrics and average metrics for each video are saved in logs/app.log.
 
-#### Visualizing the Results
+### Visualizing the Results
 Run the Visualization Script
 ```bash
 Copy code
 python visualize.py
 ```
+---
 
-#### View the Visualizations
+## View the Visualizations
 Plots are saved in the visualizations/ directory. For each video, you will find:
 
 Frame-wise metrics plots (MSE, PSNR, SSIM, and Landmark Difference, if available).
@@ -165,7 +168,7 @@ visualizations/
     requirements.txt: List of required Python packages.
     README.md: Documentation and instructions.
 
-Notes
+### Notes
 
     AWS Rekognition Costs: Using AWS Rekognition may incur costs. Be aware of pricing.
     RemBG Package: The rembg package is used for background removal. Ensure it is properly installed.
@@ -173,7 +176,7 @@ Notes
     System Compatibility: The scripts are compatible with Unix-like systems and Windows. Ensure path separators are correct for your OS.
     Error Handling: Basic error handling is included. For production use, consider more robust checks and exception handling.
 
-Contact Information
+### Contact Information
 For any issues or questions, please open an issue on the repository or contact the maintainer at reiyo1113@gmail.com.
 
-
+---
