@@ -78,7 +78,7 @@ pip install -r requirements.txt
 ### Install FFmpeg
 Download FFmpeg from ffmpeg.org.
 Install it according to your operating system.
-OR
+#### OR
 ```bash
 python -m pip install ffmpeg
 ```
@@ -88,12 +88,11 @@ Add FFmpeg to your system's PATH environment variable.
 ### Set Up AWS Credentials
 Create a .env file in the root directory with your AWS credentials:
 ```makefile
-Copy code
 AWS_ACCESS_KEY_ID=your_aws_access_key_id
 AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
 AWS_DEFAULT_REGION=your_aws_region
-Replace your_aws_access_key_id, your_aws_secret_access_key, and your_aws_region with your actual AWS credentials and preferred region.
 ```
+Replace your_aws_access_key_id, your_aws_secret_access_key, and your_aws_region with your actual AWS credentials and preferred region.
 
 ### Configuration
 Edit the config/config.yaml file if needed:
