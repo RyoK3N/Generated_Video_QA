@@ -98,8 +98,7 @@ Replace your_aws_access_key_id, your_aws_secret_access_key, and your_aws_region 
 Edit the config/config.yaml file if needed:
 
 ```yaml
-Copy code
-original_video_path: 'data/original/TEST_original.mp4'
+Copy codeoriginal_video_path: 'data/original/TEST_original.mp4'
 generated_videos_folder: 'data/generated/'
 resize_shape: [800, 800]
 num_workers: 4
