@@ -47,7 +47,7 @@ video_quality_evaluator/
 ├── visualize.py
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Prerequisites
@@ -62,12 +62,12 @@ video_quality_evaluator/
 ## Installation
 ### Clone the Repository
 
-bash
-Copy code
+```bash
 git clone https://github.com/your_username/video_quality_evaluator.git
 cd video_quality_evaluator
 Install Required Python Packages
 It’s recommended to use a virtual environment:
+```
 
 ```bash
 python -m venv venv
