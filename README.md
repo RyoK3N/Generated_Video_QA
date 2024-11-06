@@ -98,7 +98,7 @@ Replace your_aws_access_key_id, your_aws_secret_access_key, and your_aws_region 
 Edit the config/config.yaml file if needed:
 
 ```yaml
-Copy codeoriginal_video_path: 'data/original/TEST_original.mp4'
+original_video_path: 'data/original/TEST_original.mp4'
 generated_videos_folder: 'data/generated/'
 resize_shape: [800, 800]
 num_workers: 4
@@ -117,13 +117,11 @@ Place the generated videos you want to evaluate in the data/generated/ directory
 
 ### Run the Main Script
 ```bash
-Copy code
 python main.py
 ```
 Note: If FFmpeg is not installed or found in your PATH, you will see a warning:
 
 ```vbnet
-Copy code
 ffmpeg is not installed or not found in PATH. Please install ffmpeg to standardize frame rates.
 Frame rate standardization will be skipped if FFmpeg is unavailable.
 ```
@@ -134,7 +132,6 @@ Detailed logs with frame-wise metrics and average metrics for each video are sav
 ### Visualizing the Results
 Run the Visualization Script
 ```bash
-Copy code
 python visualize.py
 ```
 ---
@@ -147,7 +144,6 @@ Bar charts showing average metrics.
 Example files:
 
 ```plaintext
-Copy code
 visualizations/
 ├── Test_video-retalking.mp4_mse.png
 ├── Test_video-retalking.mp4_psnr.png
